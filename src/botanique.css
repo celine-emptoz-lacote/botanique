@@ -38,7 +38,7 @@ nav a:hover {
     display: none;
     position: absolute;
     width: 30%;
-    
+
 }
 
 nav > .navHeader li:hover .sous {
@@ -79,20 +79,32 @@ footer{
 .newsletter input::placeholder, .newsletter input textarea{
   text-align: center;
 }
+.newsletter p{
+  text-align: center;
+  margin: 1rem 0;
+}
 .catégories nav, .footer-nav-catégories{
   height: 100%;
 }
 .footer-nav-catégories, .footer-nav-sites-externes{
-  list-style: none;
+  list-style-type: none;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
-.revenir-en-haut img{
-  width: 20%;
+.revenir-en-haut a{
+  width: 30%;
+}
+.revenir-en-haut a img{
+  width: 100%;
+  height: 100%;
 }
 @media (max-width:799px) {
   .footer-éléments{
     flex-direction: column;
+  }
+  .revenir-en-haut a{
+    width: 10%;
   }
 }
 
