@@ -88,14 +88,21 @@ footer{
   width: 100%;
 }
 .newsletter input{
-  width: 100%;
+  flex-grow: 1;
 }
-.newsletter input::placeholder, .newsletter input textarea{
+.newsletter input::placeholder, .newsletter input textarea, .textfield{
   text-align: center;
 }
 .newsletter p{
   text-align: center;
   margin: 1rem 0;
+}
+.form-newsletter{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.form-newsletter button{
+  flex-grow: 1;
 }
 .catégories nav, .footer-nav-catégories{
   height: 100%;
