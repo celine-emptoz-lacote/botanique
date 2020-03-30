@@ -18,9 +18,9 @@ nav ul {
 
 nav ul li {
     float: left;
-    width: 100%;
+    width: 50%;
     text-align: center;
-    padding: 2%;
+    /*padding: 2%;*/
 }
 
 nav a {
@@ -37,12 +37,14 @@ nav a:hover {
 .sous {
     display: none;
     position: absolute;
-    width: 90%; 
+    left: 2%;
+    width: 100%; 
 }
 
 nav > ul li:hover .sous {
     display: flex;
     justify-content: center;
+
 }
 
 .deroulant >a::after {
