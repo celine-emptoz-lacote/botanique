@@ -37,14 +37,21 @@ nav a:hover {
 .sous {
     display: none;
     position: absolute;
-    width: 30%;
-
+    width: 40%;
 }
-
+.sous a{
+  white-space: nowrap;
+}
 @media screen and (max-width:480px) {
   .sous {
     left: 0;
     width: 100%;
+  }
+}
+@media (max-width:799px) {
+  .sous {
+    right: 0;
+    width: 80%;
   }
 }
 
