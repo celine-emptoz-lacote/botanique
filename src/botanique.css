@@ -41,6 +41,13 @@ nav a:hover {
     
 }
 
+@media screen and (max-width:480px) {
+  .sous {
+    left: 0;
+    width: 100%;
+  }
+}
+
 nav > .navHeader li:hover .sous {
     display: flex;
     justify-content: center;
