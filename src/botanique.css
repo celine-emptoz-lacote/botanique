@@ -10,20 +10,20 @@ nav {
     top: 0;
 }
 
-nav ul {
+.navHeader {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-nav ul li {
+.navHeader li {
     float: left;
     width: 50%;
     text-align: center;
-    /*padding: 2%;*/
+    list-style: none;
 }
 
-nav a {
+nav .navHeader a {
     display: block;
     text-decoration: none;
     color: black;
@@ -41,7 +41,7 @@ nav a:hover {
     width: 100%;
 }
 
-nav > ul li:hover .sous {
+nav > .navHeader li:hover .sous {
     display: flex;
     justify-content: center;
 
