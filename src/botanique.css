@@ -37,8 +37,8 @@ nav a:hover {
 .sous {
     display: none;
     position: absolute;
-    left: 2%;
-    width: 100%;
+    width: 30%;
+    
 }
 
 nav > .navHeader li:hover .sous {
