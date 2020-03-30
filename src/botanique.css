@@ -66,19 +66,18 @@ footer{
 .newsletter, .sites-externes, .catégories, .revenir-en-haut{
   flex: 1 0;
   margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .newsletter input{
   width: 100%;
 }
 .newsletter input::placeholder, .newsletter input textarea{
   text-align: center;
-}
-.sites-externes, .catégories, .revenir-en-haut{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
 }
 .catégories nav, .footer-nav-catégories{
   height: 100%;
@@ -97,5 +96,6 @@ footer{
 /* AUTRES */
 
 h6{
-  margin-top:0;
+  margin: 1rem 0;
+  text-align: center;
 }
