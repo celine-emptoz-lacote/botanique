@@ -87,6 +87,9 @@ footer{
   padding: 0;
   margin: 0;
 }
+.revenir-en-haut img{
+  width: 20%;
+}
 @media (max-width:799px) {
   .footer-éléments{
     flex-direction: column;
