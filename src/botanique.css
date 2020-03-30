@@ -135,3 +135,104 @@ h6{
   margin: 1rem 0;
   text-align: center;
 }
+
+
+
+/* ARBUSTES*/
+
+
+.MainArbustes {
+  text-align: center;
+}
+
+h2 {
+  margin: 3%;
+}
+
+article {
+  padding: 2%;
+}
+
+
+h3 {
+  margin: 2%;
+}
+.arbustesDiv {
+  min-height: 70vh;
+  background-image: url(images/balcon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3%;
+}
+
+
+.arbustesDiv div {
+  width: 50%;
+  margin:auto;
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.541);
+}
+
+.actus {
+  display: flex;
+  align-items: stretch;
+}
+
+.actus article {
+  width: 33%;
+}
+
+.actus article img {
+  width: 50%;
+  
+}
+
+.sectionConseil {
+  background-color: rgb(204, 204, 204);
+}
+.conseils {
+  display: flex;
+
+}
+
+.conseils section {
+  width: 50%;
+  margin: 2%;
+}
+
+.conseils li {
+  list-style: none;
+}
+.divPhotos {
+  display: flex;
+  
+ 
+ 
+}
+
+.photoGris  {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.photoGris:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.image {
+  margin: 1%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image p {
+  visibility: hidden;
+}
+
+.image img:hover + p {
+  visibility: visible;
+}
