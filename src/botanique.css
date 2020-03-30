@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* MENU DEROULANT */
+nav {
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black; 
+}
+
+nav a:hover {
+    color: orange;
+     
+}
+
+.sous {
+    display: none;
+    position: absolute;
+    width: 90%; 
+}
+
+nav > ul li:hover .sous {
+    display: flex;
+    justify-content: center;
+}
+
+.deroulant >a::after {
+    content: "▼";
+}
