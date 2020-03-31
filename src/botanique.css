@@ -137,9 +137,31 @@ h6{
 }
 
 /* PRESENTATION */
-
+.main-presentation{
+  max-width: 1300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 .main-presentation-corps{
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+@media (max-width:799px) {
+  .main-presentation-corps{
+    flex-direction: column;
+  }
+  .presentation-slide-jardins{
+    margin: 1rem auto;
+  }
+}
+@media (min-width:800px) {
+  .presentation-slide-jardins{
+    margin: 1rem;
+  }
 }
 .presentation-slide-jardins img{
   max-width: 100%;
@@ -155,7 +177,8 @@ h6{
   overflow: hidden;
   position: relative;
   max-width: 600px;
-  margin: 2rem auto;
+  flex: 1;
+  border: 1px solid black;
 }
 .photos-mini{
   padding-top: 76%;
@@ -177,7 +200,37 @@ h6{
   left: 0;
   opacity: 1;
 }
-
+.presentation-accroche{
+  margin: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.presentation-accroche p{
+  text-align: justify;
+}
+.jardin-botanique{
+  border: 1px solid black;
+  margin: 1rem;
+}
+.presentation-catégories-liste{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.h1-presentation{
+  text-align: center;
+  margin: 1rem;
+  white-space: nowrap;
+}
+.h2-presentation{
+  margin:0;
+  padding: 0;
+}
 
 /* ARBUSTES*/
 
