@@ -264,3 +264,54 @@ h3 {
   visibility: visible;
   background: #e2c4a1;
 }
+
+/* PAGE FLEURS*/
+
+.MainFleurs {
+  text-align: center;
+}
+
+.fleursDiv {
+  min-height: 70vh;
+  background-image: url(images/fondFleur.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3%;
+}
+
+.fleursDiv div {
+  width: 50%;
+  margin: auto;
+  padding: 10%;
+  background-color:  #7d818ca8;
+
+}
+
+.fleursDiv nav {
+  width: 68%;
+  padding: 1%;
+  background-color: #7d818c;
+}
+
+.fleursDiv nav a {
+  margin: 1%;
+  padding: 1.4%;
+  text-decoration: none;
+  color: black;
+}
+
+.fleursDiv nav a:hover {
+  background-color: aliceblue;
+  border-bottom: 5px solid black;
+}
+
+.sectionConseilFleurs {
+  background-color: #7d818c;
+}
+
+.image img:hover + .paragrapheFleurs {
+  visibility: visible;
+  background-color: #7d818c;
+  color: white;
+}
