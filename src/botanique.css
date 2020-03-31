@@ -442,6 +442,7 @@ h3 {
 
 .MainFleurs {
   text-align: center;
+  background-color: #e6e6e6;
 }
 
 .fleursDiv {
@@ -457,14 +458,14 @@ h3 {
   width: 50%;
   margin: auto;
   padding: 10%;
-  background-color:  #7d818ca8;
+  background-color:  #fbda21a8;
 
 }
 
 .fleursDiv nav {
   width: 68%;
   padding: 1%;
-  background-color: #7d818c;
+  background-color: #f52101;
 }
 
 .fleursDiv nav a {
@@ -472,6 +473,13 @@ h3 {
   padding: 1.4%;
   text-decoration: none;
   color: black;
+}
+
+
+@media screen and (max-width:799px) {
+  .fleursDiv nav a {
+    display: block;
+  }
 }
 
 .fleursDiv nav a:hover {
@@ -482,12 +490,12 @@ h3 {
 .sectionConseilFleurs {
   width: 98%;
   margin: auto auto 2%;
-  background-color: #b3b4b6;
+  background-color: #f7492e;
 }
 
 .image img:hover + .paragrapheFleurs {
   visibility: visible;
-  background-color: #7d818c;
+  background-color: #f52101;
   color: white;
 }
 
@@ -497,10 +505,16 @@ h3 {
   display:inline-block;
   vertical-align: middle;
   height: 2px;
-  background: #7d818c;
+  background: #f52101;
 }
 
-.etoileGrise {
+@media screen and (max-width:799px) {
+  .trait1::after , .trait1::before {
+    width: 21%;
+  }
+}
+
+.etoileRouge {
 	display: block;
 	clear: both;
 	padding: 0;
@@ -510,7 +524,7 @@ h3 {
 	font-size: 25px;
 	line-height: 1;
 }
-.etoileGrise:after {
+.etoileRouge:after {
 	content: "\273D \273D \273D \273D \273D";
-	color:#7d818ca8;
+	color:#f52101;
 }
