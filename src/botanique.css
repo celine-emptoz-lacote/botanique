@@ -191,6 +191,26 @@ h2 {
   padding-top: 2%;
 }
 
+.trait::after , .trait::before {
+  width: 24%;
+  content:''; 
+  display:inline-block; 
+  vertical-align: middle;  
+  height: 2px; 
+  background: #e2c4a1;
+}
+
+.traitBlanc::after , .traitBlanc::before {
+  width: 24%;
+  content:''; 
+  display:inline-block; 
+  vertical-align: middle;  
+  height: 2px; 
+  background: white;
+}
+
+
+
 article {
   padding: 2%;
 }
@@ -255,6 +275,8 @@ h3 {
 }
 
 .sectionConseil {
+  width: 98%;
+  margin:  auto auto 4%;
   background-color: #e2c4a1;
 }
 .conseils {
@@ -306,6 +328,20 @@ h3 {
   background: #e2c4a1;
 }
 
+.etoile {
+	display: block;
+	clear: both;
+	padding: 0;
+	border: 0;
+	font-family: arial;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1;
+}
+.etoile:after {
+	content: "\273D \273D \273D \273D \273D";	
+	color:#e2c4a1;
+}
 /* PAGE FLEURS*/
 
 .MainFleurs {
@@ -348,11 +384,37 @@ h3 {
 }
 
 .sectionConseilFleurs {
-  background-color: #7d818c;
+  width: 98%;
+  margin: auto auto 2%;
+  background-color: #b3b4b6;
 }
 
 .image img:hover + .paragrapheFleurs {
   visibility: visible;
   background-color: #7d818c;
   color: white;
+}
+
+.trait1::after , .trait1::before {
+  width: 24%;
+  content:''; 
+  display:inline-block; 
+  vertical-align: middle;  
+  height: 2px; 
+  background: #7d818c;
+}
+
+.etoileGrise {
+	display: block;
+	clear: both;
+	padding: 0;
+	border: 0;
+	font-family: arial;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1;
+}
+.etoileGrise:after {
+	content: "\273D \273D \273D \273D \273D";	
+	color:#7d818ca8;
 }
