@@ -137,18 +137,35 @@ h6{
 }
 
 /* PRESENTATION */
+.body-presentation{
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+}
 .main-presentation{
+  background-color: white;
   max-width: 1300px;
-  border: 1px solid black;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.etoile-pink{
+	display: block;
+	clear: both;
+	padding: 0;
+	border: 0;
+	font-family: arial;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1;
+  margin: 1rem;
+}
+.etoile-pink:after{
+  content: "\273D \273D \273D \273D \273D";
+	color: #D6A4A4;
 }
 .main-presentation-corps{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
 }
 @media (max-width:799px) {
   .main-presentation-corps{
@@ -160,7 +177,7 @@ h6{
 }
 @media (min-width:800px) {
   .presentation-slide-jardins{
-    margin: 1rem;
+    margin: 2rem;
   }
 }
 .presentation-slide-jardins img{
@@ -173,12 +190,15 @@ h6{
 .presentation-slide-jardins label{
   cursor:pointer;
 }
+
+.miniature label:hover{
+  border-bottom:1rem solid rgba(214,164,164,0.7);
+}
 .presentation-slide-jardins{
   overflow: hidden;
   position: relative;
   max-width: 600px;
   flex: 1;
-  border: 1px solid black;
 }
 .photos-mini{
   padding-top: 76%;
@@ -201,20 +221,23 @@ h6{
   opacity: 1;
 }
 .presentation-accroche{
-  margin: 1rem;
+  border: 1px solid rgba(214,164,164,1);
+  border-radius: 50px;
+  margin: 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 .presentation-accroche p{
   text-align: justify;
+  margin: 1rem;
 }
 .jardin-botanique{
-  text-align: center;
-  border: 1px solid black;
+  margin: 1rem;
+}
+.jardin-botanique p{
   margin: 1rem;
 }
 .presentation-catégories-liste{
@@ -227,15 +250,18 @@ h6{
 .presentation-catégories-liste li{
   width:20%;
   height:20%;
-  border: 1px solid black;
+  border: 1px solid rgba(214,164,164,1);
+  border-radius: 50px;
   position: relative;
   width: 200px;
   height: 200px;
+  margin: 1rem;
 }
 @media (max-width:799px) {
   .presentation-catégories-liste li{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
   }
 }
 .presentation-catégories-liste li a{
@@ -249,19 +275,20 @@ h6{
   z-index: 1;
 }
 figcaption{
+  border-radius: 50px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
   z-index: 2;
   position: absolute;
   visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:black;
 }
 .presentation-catégories-liste li:hover figcaption{
   visibility: visible;
+  background: rgba(214,164,164,0.7);
 }
 .h1-presentation{
   text-align: center;
@@ -269,7 +296,7 @@ figcaption{
   white-space: nowrap;
 }
 .h2-presentation{
-  margin:0;
+  margin: 1rem;
   padding: 0;
 }
 
