@@ -434,6 +434,13 @@ h3 {
   color: black;
 }
 
+
+@media screen and (max-width:799px) {
+  .fleursDiv nav a {
+    display: block;
+  }
+}
+
 .fleursDiv nav a:hover {
   background-color: aliceblue;
   border-bottom: 5px solid black;
@@ -458,6 +465,12 @@ h3 {
   vertical-align: middle;  
   height: 2px; 
   background: #f52101;
+}
+
+@media screen and (max-width:799px) {
+  .trait1::after , .trait1::before {
+    width: 21%;
+  }
 }
 
 .etoileRouge {
