@@ -184,6 +184,7 @@ h6{
 
 .MainArbustes {
   text-align: center;
+  background-color: #e6ddd4;
 }
 
 h2 {
@@ -335,13 +336,14 @@ h3 {
 	border: 0;
 	font-family: arial;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 1;
 }
 .etoile:after {
 	content: "\273D \273D \273D \273D \273D";	
-	color:#e2c4a1;
+	color: black;
 }
+
 /* PAGE FLEURS*/
 
 .MainFleurs {
