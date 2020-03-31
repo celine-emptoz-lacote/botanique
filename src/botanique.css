@@ -492,7 +492,7 @@ h3 {
 .fleursDiv nav {
   width: 68%;
   padding: 1%;
-  background-color: #f52101;
+  background-color: #f85137;
 }
 
 .fleursDiv nav a {
@@ -517,7 +517,7 @@ h3 {
 .sectionConseilFleurs {
   width: 98%;
   margin: auto auto 2%;
-  background-color: #f7492e;
+  background-color: #f76c56;
 }
 
 .image img:hover + .paragrapheFleurs {
