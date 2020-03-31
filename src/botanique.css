@@ -401,6 +401,7 @@ h3 {
 
 .MainFleurs {
   text-align: center;
+  background-color: #e6e6e6;
 }
 
 .fleursDiv {
@@ -441,7 +442,7 @@ h3 {
 .sectionConseilFleurs {
   width: 98%;
   margin: auto auto 2%;
-  background-color: #fde43e;
+  background-color: #f7492e;
 }
 
 .image img:hover + .paragrapheFleurs {
