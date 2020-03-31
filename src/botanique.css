@@ -136,6 +136,47 @@ h6{
   text-align: center;
 }
 
+/* PRESENTATION */
+
+.main-presentation-corps{
+  box-sizing: border-box;
+}
+.presentation-slide-jardins img{
+  max-width: 100%;
+}
+.miniature input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+.presentation-slide-jardins label{
+  cursor:pointer;
+}
+.presentation-slide-jardins{
+  overflow: hidden;
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.photos-mini{
+  padding-top: 76%;
+  display: flex;
+}
+.miniature{
+  flex: 1;
+  padding:0.25rem;
+}
+.fenetre{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition:all 0.5s;
+  left: -100%;
+  opacity: 0;
+}
+.fen:checked ~ .fenetre{
+  left: 0;
+  opacity: 1;
+}
 
 
 /* ARBUSTES*/

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Les Célines">
+    <title>La botanique urbaine</title>
+    <link rel="stylesheet" href="src/botanique.css">
+  </head>
+  <body id="top">
+    <header>
+      <h1>La botanique urbaine</h1>
+        <nav>
+          <ul class="navHeader">
+            <li><a href="presentation.html">Présentation</a></li>
+            <li class="deroulant"> <a href="#">Catégories</a>
+              <ul class="sous">
+                <li><a href="arbustes.html">Les arbustes</a></li>
+                <li><a href="fleurs.html">Les fleurs</a></li>
+                <li><a href="legumes.html">Les légumes</a></li>
+                <li><a href="plantes.html">Les plantes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="main-presentation-corps">
+        <div class="presentation-slide-jardins">
+          <div class="photos-mini">
+            <div class="miniature">
+              <input type="radio" name="demo" checked class="fen" id="jardin-1">
+              <label for="jardin-1">
+                <img src="src/images/jardin1.jpg" alt>
+              </label>
+              <img class="fenetre" src="src/images/jardin1.jpg" alt>
+            </div>
+            <div class="miniature">
+              <input type="radio" name="demo" class="fen" id="jardin-2">
+              <label for="jardin-2">
+                <img src="src/images/jardin2.jpg" alt>
+              </label>
+              <img class="fenetre" src="src/images/jardin2.jpg" alt>
+            </div>
+            <div class="miniature">
+              <input type="radio" name="demo" class="fen" id="jardin-3">
+              <label for="jardin-3">
+                <img src="src/images/jardin3.jpg" alt>
+              </label>
+              <img class="fenetre" src="src/images/jardin3.jpg" alt>
+            </div>
+            <div class="miniature">
+              <input type="radio" name="demo" class="fen" id="jardin-4">
+              <label for="jardin-4">
+                <img src="src/images/jardin4.jpg" alt>
+              </label>
+              <img class="fenetre" src="src/images/jardin4.jpg" alt>
+            </div>
+            <div class="miniature">
+              <input type="radio" name="demo" class="fen" id="jardin-5">
+              <label for="jardin-5">
+                <img src="src/images/jardin5.jpg" alt>
+              </label>
+              <img class="fenetre" src="src/images/jardin5.jpg" alt>
+            </div>
+            <div class="miniature">
+              <input type="radio" name="demo" class="fen" id="jardin-6">
+              <label for="jardin-6">
+                <img src="src/images/jardin6.png" alt>
+              </label>
+              <img class="fenetre" src="src/images/jardin6.png" alt>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-éléments">
+        <div class="newsletter">
+          <h6>Newsletter</h6>
+          <p>Inscrivez-vous pour recevoir toutes les actualités</p>
+          <form class="form-newsletter" action="accueil.html" method="post">
+            <label for="email"></label>
+            <input class="textfield" type="email" name="email" placeholder="Insérez votre adresse mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <button type="submit">OK</button>
+          </form>
+        </div>
+        <div class="sites-externes">
+          <h6>Sites externes</h6>
+          <ul class="footer-nav-sites-externes">
+            <li><a href="https://www.gammvert.fr/conseils/conseils-de-jardinage/potager-au-balcon">Gamme vert</a></li>
+            <li><a href="https://pretapousser.fr/magazine/creer-mini-potager-balcon/">Prêt à pousser</a></li>
+            <li><a href="https://www.detentejardin.com/plantes/legumes-et-potager/potager-de-poche-mini-surface-maxi-plaisir-4170">Détente Jardin</a></li>
+            <li><a href="#">site 4</a></li>
+            <li><a href="#">site 5</a></li>
+          </ul>
+        </div>
+        <div class="catégories">
+          <h6>Catégories</h6>
+          <nav>
+            <ul class="footer-nav-catégories">
+              <li><a href="arbustes.html">Les arbustes</a></li>
+              <li><a href="fleurs.html">Les fleurs</a></li>
+              <li><a href="legumes.html">Les légumes</a></li>
+              <li><a href="plantes.html">Les plantes</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="revenir-en-haut">
+          <a href="#top"><h6>Revenir en haut</h6></a>
+          <a href="#top"><img src="src/images/flèche.png" alt="flèque qui monte vers le haut"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
