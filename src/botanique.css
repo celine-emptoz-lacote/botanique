@@ -363,14 +363,14 @@ h3 {
   width: 50%;
   margin: auto;
   padding: 10%;
-  background-color:  #7d818ca8;
+  background-color:  #fbda21a8;
 
 }
 
 .fleursDiv nav {
   width: 68%;
   padding: 1%;
-  background-color: #7d818c;
+  background-color: #f52101;
 }
 
 .fleursDiv nav a {
@@ -388,12 +388,12 @@ h3 {
 .sectionConseilFleurs {
   width: 98%;
   margin: auto auto 2%;
-  background-color: #b3b4b6;
+  background-color: #fde43e;
 }
 
 .image img:hover + .paragrapheFleurs {
   visibility: visible;
-  background-color: #7d818c;
+  background-color: #f52101;
   color: white;
 }
 
@@ -403,10 +403,10 @@ h3 {
   display:inline-block; 
   vertical-align: middle;  
   height: 2px; 
-  background: #7d818c;
+  background: #f52101;
 }
 
-.etoileGrise {
+.etoileRouge {
 	display: block;
 	clear: both;
 	padding: 0;
@@ -416,7 +416,7 @@ h3 {
 	font-size: 25px;
 	line-height: 1;
 }
-.etoileGrise:after {
+.etoileRouge:after {
 	content: "\273D \273D \273D \273D \273D";	
-	color:#7d818ca8;
+	color:#f52101;
 }
