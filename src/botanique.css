@@ -193,6 +193,12 @@ h3 {
   border-bottom: 5px solid black;
 }
 
+@media screen and (max-width:799px) {
+  .arbustesDiv nav a {
+    display: block;
+  }
+}
+
 .actus {
   display: flex;
   align-items: stretch;
