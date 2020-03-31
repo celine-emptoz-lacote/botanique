@@ -147,6 +147,7 @@ h6{
 
 h2 {
   margin: 3%;
+  padding-top: 2%;
 }
 
 article {
@@ -155,7 +156,7 @@ article {
 
 
 h3 {
-  margin: 2%;
+  margin: 5%;
 }
 .arbustesDiv {
   min-height: 70vh;
@@ -185,11 +186,11 @@ h3 {
 
 .actus article img {
   width: 50%;
-  
+  margin: 2%;
 }
 
 .sectionConseil {
-  background-color: rgb(204, 204, 204);
+  background-color: #e2c4a1;
 }
 .conseils {
   display: flex;
@@ -199,10 +200,17 @@ h3 {
 .conseils section {
   width: 50%;
   margin: 2%;
+  text-align: left;
 }
+
+
 
 .conseils li {
   list-style: none;
+}
+
+.icon {
+  width: 3%;
 }
 .divPhotos {
   display: flex;
@@ -235,4 +243,5 @@ h3 {
 
 .image img:hover + p {
   visibility: visible;
+  background: #e2c4a1;
 }
