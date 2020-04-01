@@ -640,18 +640,38 @@ figcaption{
   text-align: center;
 }
 
-.accueilIntro {
-  margin: 3%;
+.accueil h1 {
+  padding-top: 3%;
 }
+
+.accueilIntro {
+  width: 80%;
+  margin: 3% auto 4%;
+  font-size: 25px;
+}
+
 .accueilDiv {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1%;
+  margin: 5% 1%;
 }
 
-.accueilDiv img {
-  width: 24%;
+
+.img1 {
+  width: 26.5%;
+}
+
+@media screen and (max-width:799px) {
+  .accueilIntro {
+    font-size: 17px;
+  }
+  .accueilDiv {
+    display: block;
+  }
+  .img1 {
+    width: 45%;
+  }
 }
 
 .AccueilP {
@@ -660,6 +680,11 @@ figcaption{
 }
 .AccueilP h1 {
   margin: 1%;
+}
+
+.AccueilP p {
+  background-color: rgb(219, 219, 219);
+  padding: 1.2%;
 }
 
 .DivImages {
@@ -672,25 +697,52 @@ figcaption{
   width: 20%;
 }
 
+.inspiration h1 {
+  width: 75%;
+  margin: auto auto 3%;
+}
+
 .divPrincipale {
   display: flex;
-}
-
-.div1 {
   margin: 1%;
-  background-color: #e5e1e7;
+  background-color: #cecece;
 }
 
-.div2 {
+.div1 , .div2 , .div3 {
   margin: 1%;
-  background-color: #fcecbd;
 }
 
-.div1 img  , .div2 img, .div3 img  {
+.div1 img  , .div2 img  {
   width: 50%;
 }
 
-.div3 {
-  margin: 1%;
-  background-color: #e4e96a;
+.div3 img {
+  width: 50%;
 }
+
+.div1 , .div2 , .div3  {
+  width: 40%;
+}
+
+.div3 h2 {
+  margin-bottom: 13%;
+}
+
+@media screen and (max-width:799px){
+  .inspiration h1 {
+    font-size: 15PX;
+  }
+  .divPrincipale {
+    display: block;
+  }
+  .div1 , .div2 , .div3 {
+    width: 100%;
+  }
+}
+
+.div1 p , .div2 p , .div3 p {
+  padding: 4%;
+}
+
+
+
