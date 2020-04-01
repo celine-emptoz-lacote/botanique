@@ -676,11 +676,12 @@ figcaption{
 
 .divPrincipale {
   display: flex;
+  margin: 1%;
+  background-color: #cecece;
 }
 
 .div1 , .div2 , .div3 {
   margin: 1%;
-  border: 1px solid black;
 }
 
 .div1 img  , .div2 img  {
@@ -693,18 +694,16 @@ figcaption{
 
 .div1 {
   width: 40%;
-  background-color: #e6e4e7;
 }
 
 
 .div2 {
   width: 40%;
-  background-color: #fcf6e6;
+
 }
 
 .div3 {
   width: 40%;
-  background-color: #e0d8de;
 }
 
 .div3 h2 {
