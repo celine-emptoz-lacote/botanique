@@ -246,6 +246,7 @@ h6{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 1rem 0;
 }
 .presentation-catégories-liste li{
   width:20%;
