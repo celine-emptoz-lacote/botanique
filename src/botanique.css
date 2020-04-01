@@ -52,7 +52,7 @@ nav .navHeader a {
 }
 
 nav a:hover {
-  color: orange;
+  color: white;
 
 }
 
@@ -580,3 +580,22 @@ h3 {
 	content: "\273D \273D \273D \273D \273D";
 	color:#f52101;
 }
+
+/*PAGE D ACCUEIL*/
+
+.accueilDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1%;
+}
+
+.accueilDiv img {
+  width: 30%;
+  margin: 1%;
+}
+.DivImages img {
+  
+  margin: auto;
+}
+
