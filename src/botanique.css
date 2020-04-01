@@ -155,7 +155,7 @@ footer{
 
 /* AUTRES */
 h2 {
-  margin: 2rem;
+  margin: 1rem;
 }
 h3 {
   margin: 1rem;
@@ -163,6 +163,34 @@ h3 {
 h6{
   margin: 1rem 0;
   text-align: center;
+}
+.trait, .trait1, .traitBlanc, .trait-vert{
+  white-space: nowrap;
+}
+.trait::after, .trait::before,.trait1::after, .trait1::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after{
+  width: 24%;
+  content:'';
+  display:inline-block;
+  vertical-align: middle;
+  height: 2px;
+  white-space: nowrap;
+}
+.trait::after, .trait::before{
+  background: #e2c4a1;
+}
+.trait1::after, .trait1::before{
+  background: #f52101;
+}
+.traitBlanc::after, .traitBlanc::before{
+  background: white;
+}
+.trait-vert::before, .trait-vert::after{
+  background: #063200;
+}
+@media screen and (max-width:799px){
+  .trait1::after, .trait1::before, .trait::after, .trait::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after{
+    width: 20%;
+  }
 }
 
 /* PRESENTATION */
@@ -484,66 +512,91 @@ figcaption{
     width:30%;
   }
 }
-
-/* ARBUSTES*/
-
-
-
-.sectionConseil {
-  width: 98%;
-  margin:  auto auto 4%;
+#bloc-conseils-arbustes{
   background-color: #e2c4a1;
 }
-.conseils {
-  display: flex;
+#bloc-conseils-fleurs{
+  background-color: #f76c56;
+}
+#bloc-conseils-legumes{
+  background-color: #ACBF65;
+}
+#bloc-conseils-plantes{
 
 }
-
-.conseils section {
-  width: 50%;
-  margin: 2%;
+.conseils{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.conseils h3{
+  text-align: center;
+}
+.conseils section{
+  flex:1;
   text-align: left;
+  margin: 0 1rem 1rem 1rem;
 }
-
-.conseils li {
+.conseils li{
   list-style: none;
-}
-
-.icon {
-  width: 3%;
-}
-.divPhotos {
+  padding-left: 10%;
+  align-items: center;
   display: flex;
+  margin: 0.4rem;
 }
-
-.photoGris  {
+.conseils p{
+  text-align: justify;
+}
+.icon{
+  width: 3%;
+  min-width: 18px;
+}
+.divPhotos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.photoGris{
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
 }
-
-.photoGris:hover {
+.photoGris:hover{
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
-
-.image {
-  margin: 1%;
+.image{
+  margin: 0.2rem;
+  width: 230px;
 }
-
-.image img {
+.image img{
   width: 100%;
+  margin-top: 1rem;
 }
-
-.image p {
+.image p{
   visibility: hidden;
 }
-
-.image img:hover + p {
-  visibility: visible;
+.image .p-arbustes{
   background: #e2c4a1;
 }
-
-.etoile {
+.image .p-fleurs{
+  background: #f52101;
+  color: white;
+}
+.image .p-legumes{
+  background: #ACBF65;
+}
+.image .p-plantes{
+  background: ;
+}
+.image img:hover + p{
+  visibility: visible;
+}
+.photos{
+  padding: 1rem;
+}
+.etoile, .etoileRouge {
 	display: block;
 	clear: both;
 	padding: 0;
@@ -552,55 +605,20 @@ figcaption{
 	text-align: center;
 	font-size: 20px;
 	line-height: 1;
+  margin: 1rem auto;
 }
-.etoile:after {
+.etoile:after, .etoileRouge:after{
 	content: "\273D \273D \273D \273D \273D";
-	color: black;
 }
+.etoile:after{
+  color: black;
+}
+.etoileRouge:after{
+  color:#f52101;
+}
+/* ARBUSTES */
 
-/* PAGE FLEURS*/
-
-.sectionConseilFleurs {
-  width: 98%;
-  margin: auto auto 2%;
-  background-color: #f76c56;
-}
-
-.image img:hover + .paragrapheFleurs {
-  visibility: visible;
-  background-color: #f52101;
-  color: white;
-}
-
-.trait1::after , .trait1::before {
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  background: #f52101;
-}
-
-@media screen and (max-width:799px) {
-  .trait1::after , .trait1::before {
-    width: 21%;
-  }
-}
-
-.etoileRouge {
-	display: block;
-	clear: both;
-	padding: 0;
-	border: 0;
-	font-family: arial;
-	text-align: center;
-	font-size: 25px;
-	line-height: 1;
-}
-.etoileRouge:after {
-	content: "\273D \273D \273D \273D \273D";
-	color:#f52101;
-}
+/* PAGE FLEURS */
 
 /*PAGE D ACCUEIL*/
 
