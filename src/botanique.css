@@ -52,7 +52,7 @@ nav .navHeader a {
 }
 
 nav a:hover {
-  color: orange;
+  color: white;
 
 }
 
@@ -164,34 +164,7 @@ h6{
   margin: 1rem 0;
   text-align: center;
 }
-.trait, .trait1, .traitBlanc, .trait-vert{
-  white-space: nowrap;
-}
-.trait::after, .trait::before,.trait1::after, .trait1::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after{
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  white-space: nowrap;
-}
-.trait::after, .trait::before{
-  background: #e2c4a1;
-}
-.trait1::after, .trait1::before{
-background: #f52101;
-}
-.traitBlanc::after, .traitBlanc::before{
-  background: white;
-}
-.trait-vert::before, .trait-vert::after{
-  background: #063200;
-}
-@media screen and (max-width:799px){
-  .trait1::after, .trait1::before, .trait::after, .trait::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after{
-    width: 20%;
-  }
-}
+
 /* PRESENTATION */
 .body-presentation{
   background: linear-gradient(to right, #D6A4A4, #DAE2F8);
@@ -302,7 +275,6 @@ background: #f52101;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1rem 0;
 }
 .presentation-catégories-liste li{
   width:20%;
@@ -600,6 +572,21 @@ figcaption{
   color: white;
 }
 
+.trait1::after , .trait1::before {
+  width: 24%;
+  content:'';
+  display:inline-block;
+  vertical-align: middle;
+  height: 2px;
+  background: #f52101;
+}
+
+@media screen and (max-width:799px) {
+  .trait1::after , .trait1::before {
+    width: 21%;
+  }
+}
+
 .etoileRouge {
 	display: block;
 	clear: both;
@@ -615,73 +602,63 @@ figcaption{
 	color:#f52101;
 }
 
-/* LES LEGUMES */
+/*PAGE D ACCUEIL*/
 
-.sectionConseil {
-  width: 98%;
-  margin:  auto auto 4%;
-  background-color: #e2c4a1;
+.accueil {
+  text-align: center;
 }
-.conseils {
+
+.accueilIntro {
+  margin: 3%;
+}
+.accueilDiv {
   display: flex;
-
-}
-
-.conseils section {
-  width: 50%;
-  margin: 2%;
-  text-align: left;
-}
-
-.conseils li {
-  list-style: none;
-}
-
-.icon {
-  width: 3%;
-}
-.divPhotos {
-  display: flex;
-}
-
-.photoGris  {
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}
-
-.photoGris:hover {
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-}
-
-.image {
+  justify-content: space-around;
+  align-items: center;
   margin: 1%;
 }
 
-.image img {
-  width: 100%;
+.accueilDiv img {
+  width: 24%;
 }
 
-.image p {
-  visibility: hidden;
+.AccueilP {
+  width: 90%;
+  margin: 0 auto 2%;
+}
+.AccueilP h1 {
+  margin: 1%;
 }
 
-.image img:hover + p {
-  visibility: visible;
-  background: #e2c4a1;
+.DivImages {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+}
+.DivImages img {
+  width: 20%;
 }
 
-.etoile {
-	display: block;
-	clear: both;
-	padding: 0;
-	border: 0;
-	font-family: arial;
-	text-align: center;
-	font-size: 20px;
-	line-height: 1;
+.divPrincipale {
+  display: flex;
 }
-.etoile:after {
-	content: "\273D \273D \273D \273D \273D";
-	color: black;
+
+.div1 {
+  margin: 1%;
+  background-color: #e5e1e7;
+}
+
+.div2 {
+  margin: 1%;
+  background-color: #fcecbd;
+}
+
+.div1 img  , .div2 img, .div3 img  {
+  width: 50%;
+}
+
+.div3 {
+  margin: 1%;
+  background-color: #e4e96a;
 }
