@@ -16,6 +16,7 @@ header  {
 
 header h1 {
   text-align: center;
+  font-family: 'Inria Serif', serif;
 }
 
 footer {
@@ -158,6 +159,7 @@ footer{
 
 h2 {
   margin: 1rem;
+  font-family: 'Inria Serif', serif;
 }
 h3 {
   margin: 1rem;
@@ -612,7 +614,7 @@ figcaption{
 .photos{
   padding: 1rem;
 }
-.etoile, .etoileRouge {
+.etoile, .etoileRouge , .etoileBeige {
 	display: block;
 	clear: both;
 	padding: 0;
@@ -623,7 +625,7 @@ figcaption{
 	line-height: 1;
   margin: 1rem auto;
 }
-.etoile:after, .etoileRouge:after{
+.etoile:after, .etoileRouge:after , .etoileBeige:after {
 	content: "\273D \273D \273D \273D \273D";
 }
 .etoile:after{
@@ -632,6 +634,9 @@ figcaption{
 .etoileRouge:after{
   color:#f52101;
 }
+.etoileBeige:after {
+  color: #e2c4a1;
+}
 /* ARBUSTES */
 
 /* PAGE FLEURS */
@@ -639,18 +644,19 @@ figcaption{
 /*PAGE D ACCUEIL*/
 
 .accueil {
-  
   text-align: center;
 }
 
 .accueil h1 {
   padding-top: 3%;
+  font-family: 'Inria Serif', serif;
 }
 
 .accueilIntro {
   width: 80%;
   margin: 3% auto 4%;
   font-size: 25px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .accueilDiv {
@@ -686,7 +692,7 @@ figcaption{
 }
 
 .AccueilP p {
-  background-color: rgb(219, 219, 219);
+  background-color: #f3efe4;
   padding: 1.2%;
 }
 
@@ -698,6 +704,8 @@ figcaption{
 }
 .DivImages img {
   width: 20%;
+  padding: 0.5%;
+  background-color: #f3efe4;
 }
 
 .inspiration h1 {
@@ -708,7 +716,7 @@ figcaption{
 .divPrincipale {
   display: flex;
   margin: 1%;
-  background-color: #cecece;
+  background-color: #f3efe4;
 }
 
 .div1 , .div2 , .div3 {
@@ -727,9 +735,6 @@ figcaption{
   width: 40%;
 }
 
-.div3 h2 {
-  margin-bottom: 13%;
-}
 
 @media screen and (max-width:799px){
   .inspiration h1 {
@@ -745,4 +750,5 @@ figcaption{
 
 .div1 p , .div2 p , .div3 p {
   padding: 4%;
+  text-align: justify;
 }
