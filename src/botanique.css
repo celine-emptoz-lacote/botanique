@@ -16,6 +16,7 @@ header  {
 
 header h1 {
   text-align: center;
+  font-family: 'Inria Serif', serif;
 }
 
 footer {
@@ -45,22 +46,23 @@ nav {
   list-style: none;
 }
 
-nav .navHeader a {
+nav .navHeader a  {
   display: block;
   text-decoration: none;
   color: black;
 }
-
-nav a:hover {
-  color: white;
-
+nav a:hover , .footer-éléments a:hover{
+  color: orange;
 }
-
+.footer-éléments a {
+  text-decoration: none;
+  color: black;
+}
 .sous {
   display: none;
   position: absolute;
   width: 40%;
-  background-color: #D6A4A4;
+  background-color: rgb(214, 192, 164);
   padding: 0.5%;
 }
 .sous a{
@@ -157,6 +159,7 @@ footer{
 
 h2 {
   margin: 1rem;
+  font-family: 'Inria Serif', serif;
 }
 h3 {
   margin: 1rem;
@@ -605,7 +608,7 @@ figcaption{
 .photos{
   padding: 1rem;
 }
-.etoile, .etoileRouge, .etoile-pink, .etoile-violette{
+.etoile, .etoileRouge, .etoile-pink, .etoile-violette, .etoileBeige{
 	display: block;
 	clear: both;
 	padding: 0;
@@ -616,7 +619,7 @@ figcaption{
 	line-height: 1;
   margin: 1rem auto;
 }
-.etoile:after, .etoileRouge:after, .etoile-pink:after, .etoile-violette:after{
+.etoile:after, .etoileRouge:after, .etoile-pink:after, .etoile-violette:after, .etoileBeige:after{
 	content: "\273D \273D \273D \273D \273D";
 }
 .etoile:after{
@@ -631,6 +634,10 @@ figcaption{
 .etoile-violette:after{
   color: #46002E;
 }
+.etoileBeige:after {
+  color: #e2c4a1;
+}
+
 /* ARBUSTES */
 
 /* PAGE FLEURS */
@@ -643,12 +650,14 @@ figcaption{
 
 .accueil h1 {
   padding-top: 3%;
+  font-family: 'Inria Serif', serif;
 }
 
 .accueilIntro {
   width: 80%;
   margin: 3% auto 4%;
   font-size: 25px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .accueilDiv {
@@ -684,7 +693,7 @@ figcaption{
 }
 
 .AccueilP p {
-  background-color: rgb(219, 219, 219);
+  background-color: #f3efe4;
   padding: 1.2%;
 }
 
@@ -696,6 +705,8 @@ figcaption{
 }
 .DivImages img {
   width: 20%;
+  padding: 0.5%;
+  background-color: #f3efe4;
 }
 
 .inspiration h1 {
@@ -706,7 +717,7 @@ figcaption{
 .divPrincipale {
   display: flex;
   margin: 1%;
-  background-color: #cecece;
+  background-color: #f3efe4;
 }
 
 .div1 , .div2 , .div3 {
@@ -725,9 +736,6 @@ figcaption{
   width: 40%;
 }
 
-.div3 h2 {
-  margin-bottom: 13%;
-}
 
 @media screen and (max-width:799px){
   .inspiration h1 {
@@ -743,4 +751,5 @@ figcaption{
 
 .div1 p , .div2 p , .div3 p {
   padding: 4%;
+  text-align: justify;
 }
