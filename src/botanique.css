@@ -154,6 +154,7 @@ footer{
 }
 
 /* AUTRES */
+
 h2 {
   margin: 1rem;
 }
@@ -530,6 +531,21 @@ figcaption{
   justify-content: center;
   align-items: flex-start;
 }
+@media (max-width:799px) {
+  .conseils{
+    flex-direction: column;
+  }
+  .conseils li{
+    text-align: center;
+    margin: 1rem;
+  }
+}
+@media (min-width:800px){
+  .conseils li{
+    padding-left: 10%;
+    margin: 0.4rem;
+  }
+}
 .conseils h3{
   text-align: center;
 }
@@ -540,10 +556,8 @@ figcaption{
 }
 .conseils li{
   list-style: none;
-  padding-left: 10%;
   align-items: center;
   display: flex;
-  margin: 0.4rem;
 }
 .conseils p{
   text-align: justify;
