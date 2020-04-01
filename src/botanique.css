@@ -635,6 +635,7 @@ figcaption{
   margin: 3% auto 4%;
   font-size: 25px;
 }
+
 .accueilDiv {
   display: flex;
   justify-content: space-around;
@@ -642,8 +643,21 @@ figcaption{
   margin: 5% 1%;
 }
 
+
 .img1 {
   width: 26.5%;
+}
+
+@media screen and (max-width:799px) {
+  .accueilIntro {
+    font-size: 17px;
+  }
+  .accueilDiv {
+    display: block;
+  }
+  .img1 {
+    width: 45%;
+  }
 }
 
 .AccueilP {
@@ -692,22 +706,24 @@ figcaption{
   width: 50%;
 }
 
-.div1 {
-  width: 40%;
-}
-
-
-.div2 {
-  width: 40%;
-
-}
-
-.div3 {
+.div1 , .div2 , .div3  {
   width: 40%;
 }
 
 .div3 h2 {
   margin-bottom: 13%;
+}
+
+@media screen and (max-width:799px){
+  .inspiration h1 {
+    font-size: 15PX;
+  }
+  .divPrincipale {
+    display: block;
+  }
+  .div1 , .div2 , .div3 {
+    width: 100%;
+  }
 }
 
 .div1 p , .div2 p , .div3 p {
