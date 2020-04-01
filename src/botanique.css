@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+
 }
 
 /*Modifs*/
@@ -9,7 +9,7 @@ header  {
   height: 15vh;
   padding: 1%;
   background-image: url(images/fond.jpg);
-  
+
 }
 /**************************************************/
 
@@ -154,7 +154,12 @@ footer{
 }
 
 /* AUTRES */
-
+h2 {
+  margin: 2rem;
+}
+h3 {
+  margin: 1rem;
+}
 h6{
   margin: 1rem 0;
   text-align: center;
@@ -324,102 +329,165 @@ figcaption{
   padding: 0;
 }
 
-/* ARBUSTES*/
+/* CATEGORIES */
 
-
-
-.MainArbustes {
+.main-categories{
   text-align: center;
+  max-width:1700px;
+  margin: 0 auto;
+}
+#main-categories-arbustes{
   background-color: #e6ddd4;
 }
-
-h2 {
-  margin: 3%;
-  padding-top: 2%;
+#main-categories-fleurs{
+  background-color: #f2ecde;
 }
-
-.trait::after , .trait::before {
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  background: #e2c4a1;
+#main-categories-legumes{
+  background-color: ;
 }
-
-.traitBlanc::after , .traitBlanc::before {
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  background: white;
+#main-categories-plantes{
+  background-color: ;
 }
-
-
-
-article {
-  padding: 2%;
-}
-
-
-h3 {
-  margin: 5%;
-}
-.arbustesDiv {
+.categories-title{
   min-height: 70vh;
-  background-image: url(images/balcon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-
-.arbustesDiv div {
-  width: 50%;
-  margin:auto;
-  padding: 10%;
-  background-color: rgba(255, 255, 255, 0.541);
+#categories-title-arbustes{
+  background-image: url(images/balcon.jpg);
 }
+#categories-title-fleurs{
+  background-image: url(images/fondFleur.jpg);
+}
+#categories-title-legumes{
+  background-image: url(images/potagerbalcon.jpg);
+}
+#categories-title-plantes{
+  background-image: ;
+}
+.categories-fondtranspent{
+  padding: 0;
+  max-width: 1000px;
+  min-height:50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#categories-fondtranspent-arbustes{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#categories-fondtranspent-fleurs{
+  background-color: #fbda21a8;
+}
+#categories-fondtranspent-legumes{
+  background-color: rgba(184, 214, 164, 0.7);
+}
+#categories-fondtranspent-plantes{
 
-.arbustesDiv nav {
-  width: 68%;
-  padding: 1%;
+}
+.h2-categories{
+  padding: 0;
+  margin: 2rem;
+}
+.categories-fondtranspent p{
+  margin: 1rem;
+}
+.nav-categories{
+  max-width: 1000px;
+  width:100%;
+  padding: 1% 0;
+}
+#nav-categories-arbustes{
   background-color: #e2c4a1;
 }
+#nav-categories-fleurs{
+  background-color: #f85137;
+}
+#nav-categories-legumes{
+  background-color: #ACBF65;
+}
+#nav-categories-plantes{
 
-.arbustesDiv nav a {
+}
+.nav-categories a{
   margin: 1%;
   padding: 1.4%;
   text-decoration: none;
   color: black;
+  border-radius: 10px;
 }
-
-.arbustesDiv nav a:hover {
+.nav-a-arbustes:hover{
   background-color: aliceblue;
   border-bottom: 5px solid black;
+  font-weight: bold;
 }
+.nav-a-fleurs:hover{
+  background-color: aliceblue;
+  border-bottom: 5px solid black;
+  font-weight: bold;
+}
+.nav-a-legumes:hover{
+  background: linear-gradient(to top, white, rgba(255, 0, 0, 0));
+  border-bottom: 5px solid #063200;
+  color:#063200;
+  font-weight: bold;
+}
+.nav-a-plantes:hover{
 
+}
 @media screen and (max-width:799px) {
-  .arbustesDiv nav a {
+  .nav-categories a{
     display: block;
+    max-width:70%;
+    margin: 0 auto;
+  }
+}
+.bloc{
+  padding: 1rem;
+}
+.actus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.actus article{
+  text-align: justify;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.actus article p{
+  padding: 1rem;
+}
+.actus article h3{
+  white-space: nowrap;
+}
+.actus article img{
+  width: 50%;
+  margin: 1rem;
+}
+@media screen and (max-width:799px) {
+  .actus{
+    flex-direction: column;
+  }
+  .actus article img{
+    width:30%;
   }
 }
 
-.actus {
-  display: flex;
-  align-items: stretch;
-}
+/* ARBUSTES*/
 
-.actus article {
-  width: 33%;
-}
 
-.actus article img {
-  width: 50%;
-  margin: 2%;
-}
 
 .sectionConseil {
   width: 98%;
@@ -491,53 +559,6 @@ h3 {
 }
 
 /* PAGE FLEURS*/
-
-.MainFleurs {
-  text-align: center;
-  background-color: #f2ecde;
-}
-
-.fleursDiv {
-  min-height: 70vh;
-  background-image: url(images/fondFleur.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 3%;
-}
-
-.fleursDiv div {
-  width: 50%;
-  margin: auto;
-  padding: 10%;
-  background-color:  #fbda21a8;
-
-}
-
-.fleursDiv nav {
-  width: 68%;
-  padding: 1%;
-  background-color: #f85137;
-}
-
-.fleursDiv nav a {
-  margin: 1%;
-  padding: 1.4%;
-  text-decoration: none;
-  color: black;
-}
-
-
-@media screen and (max-width:799px) {
-  .fleursDiv nav a {
-    display: block;
-  }
-}
-
-.fleursDiv nav a:hover {
-  background-color: aliceblue;
-  border-bottom: 5px solid black;
-}
 
 .sectionConseilFleurs {
   width: 98%;
@@ -616,7 +637,7 @@ h3 {
   margin: auto;
 }
 .DivImages img {
-  width: 20%; 
+  width: 20%;
 }
 
 .divPrincipale {
@@ -641,5 +662,3 @@ h3 {
   margin: 1%;
   background-color: #e4e96a;
 }
-
-
