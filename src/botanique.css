@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+
 }
 
 /*Modifs*/
@@ -9,7 +9,7 @@ header  {
   height: 15vh;
   padding: 1%;
   background-image: url(images/fond.jpg);
-  
+
 }
 /**************************************************/
 
@@ -159,7 +159,34 @@ h6{
   margin: 1rem 0;
   text-align: center;
 }
-
+.trait, .trait1, .traitBlanc, .trait-vert{
+  white-space: nowrap;
+}
+.trait::after, .trait::before,.trait1::after, .trait1::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after{
+  width: 24%;
+  content:'';
+  display:inline-block;
+  vertical-align: middle;
+  height: 2px;
+  white-space: nowrap;
+}
+.trait::after, .trait::before{
+  background: #e2c4a1;
+}
+.trait1::after, .trait1::before{
+background: #f52101;
+}
+.traitBlanc::after, .traitBlanc::before{
+  background: white;
+}
+.trait-vert::before, .trait-vert::after{
+  background: #063200;
+}
+@media screen and (max-width:799px){
+  .trait1::after, .trait1::before, .trait::after, .trait::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after{
+    width: 20%;
+  }
+}
 /* PRESENTATION */
 .body-presentation{
   background: linear-gradient(to right, #D6A4A4, #DAE2F8);
@@ -327,8 +354,6 @@ figcaption{
 
 /* ARBUSTES*/
 
-
-
 .MainArbustes {
   text-align: center;
   background-color: #e6ddd4;
@@ -339,23 +364,6 @@ h2 {
   padding-top: 2%;
 }
 
-.trait::after , .trait::before {
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  background: #e2c4a1;
-}
-
-.traitBlanc::after , .traitBlanc::before {
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  background: white;
-}
 
 
 
@@ -552,21 +560,6 @@ h3 {
   color: white;
 }
 
-.trait1::after , .trait1::before {
-  width: 24%;
-  content:'';
-  display:inline-block;
-  vertical-align: middle;
-  height: 2px;
-  background: #f52101;
-}
-
-@media screen and (max-width:799px) {
-  .trait1::after , .trait1::before {
-    width: 21%;
-  }
-}
-
 .etoileRouge {
 	display: block;
 	clear: both;
@@ -580,4 +573,162 @@ h3 {
 .etoileRouge:after {
 	content: "\273D \273D \273D \273D \273D";
 	color:#f52101;
+}
+
+/* LES LEGUMES */
+
+.main-legumes{
+  text-align: center;
+  background-color: #e6ddd4; /* à changer */
+  max-width:1700px;
+  margin: 0 auto;
+}
+.legumes-div{
+  min-height: 70vh;
+  background-image: url(images/potagerbalcon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-legume-fond-transpant{
+  padding: 0;
+  max-width: 1000px;
+  background-color: rgba(184, 214, 164, 0.7);
+}
+.h2-legumes{
+  padding: 0;
+  margin: 2rem;
+}
+.main-legume-fond-transpant p{
+  margin: 1rem;
+}
+.legumes-div nav {
+  max-width: 1000px;
+  width:100%;
+  padding: 1% 0;
+  background-color: #ACBF65;
+}
+
+.legumes-div nav a {
+  margin: 1%;
+  padding: 1.4%;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+
+.legumes-div nav a:hover {
+  background: linear-gradient(to top, white, rgba(255, 0, 0, 0));
+  border-bottom: 5px solid #063200;
+}
+
+@media screen and (max-width:799px) {
+  .legumes-div nav a {
+    display: block;
+    max-width:70%;
+    margin: 0 auto;
+  }
+}
+
+
+
+article {
+  padding: 2%;
+}
+
+
+h3 {
+  margin: 5%;
+}
+
+
+
+
+
+.actus {
+  display: flex;
+  align-items: stretch;
+}
+
+.actus article {
+  width: 33%;
+}
+
+.actus article img {
+  width: 50%;
+  margin: 2%;
+}
+
+.sectionConseil {
+  width: 98%;
+  margin:  auto auto 4%;
+  background-color: #e2c4a1;
+}
+.conseils {
+  display: flex;
+
+}
+
+.conseils section {
+  width: 50%;
+  margin: 2%;
+  text-align: left;
+}
+
+.conseils li {
+  list-style: none;
+}
+
+.icon {
+  width: 3%;
+}
+.divPhotos {
+  display: flex;
+}
+
+.photoGris  {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.photoGris:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.image {
+  margin: 1%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image p {
+  visibility: hidden;
+}
+
+.image img:hover + p {
+  visibility: visible;
+  background: #e2c4a1;
+}
+
+.etoile {
+	display: block;
+	clear: both;
+	padding: 0;
+	border: 0;
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1;
+}
+.etoile:after {
+	content: "\273D \273D \273D \273D \273D";
+	color: black;
 }
