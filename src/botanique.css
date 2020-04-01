@@ -537,13 +537,14 @@ figcaption{
   }
   .conseils li{
     text-align: center;
+    justify-content: center;
     margin: 1rem;
   }
 }
 @media (min-width:800px){
   .conseils li{
     padding-left: 10%;
-    margin: 0.4rem;
+    margin: 0.6rem;
   }
 }
 .conseils h3{
@@ -556,7 +557,7 @@ figcaption{
 }
 .conseils li{
   list-style: none;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
 }
 .conseils p{
@@ -743,6 +744,3 @@ figcaption{
 .div1 p , .div2 p , .div3 p {
   padding: 4%;
 }
-
-
-
