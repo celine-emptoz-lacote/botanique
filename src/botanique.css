@@ -51,7 +51,7 @@ nav .navHeader a  {
   text-decoration: none;
   color: black;
 }
-nav a:hover , .footer-éléments a:hover{
+header nav a:hover, .footer-éléments a:hover{
   color: orange;
 }
 .footer-éléments a {
@@ -96,6 +96,7 @@ nav > .navHeader li:hover .sous {
 footer{
   width: 100%;
   padding: 1rem 0;
+  font-family: 'Gotu', sans-serif;
 }
 .footer-éléments{
   max-width: 1300px;
@@ -105,16 +106,13 @@ footer{
 }
 .newsletter, .sites-externes, .catégories, .revenir-en-haut{
   flex: 1 0;
-  margin: 0 1rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100%;
   width: 100%;
-}
-.newsletter input{
-  flex-grow: 1;
 }
 .newsletter input::placeholder, .newsletter input textarea, .textfield{
   text-align: center;
@@ -126,9 +124,14 @@ footer{
 .form-newsletter{
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
 }
-.form-newsletter button{
-  flex-grow: 1;
+.form-newsletter button, .form-newsletter input{
+  flex: 1;
+  width: auto;
+}
+.form-newsletter input{
+  width:80%;
 }
 .catégories nav, .footer-nav-catégories{
   height: 100%;
@@ -139,8 +142,11 @@ footer{
   padding: 0;
   margin: 0;
 }
+.revenir-en-haut{
+  align-self: center;
+}
 .revenir-en-haut a{
-  width: 30%;
+  width: 25%;
 }
 .revenir-en-haut a img{
   width: 100%;
@@ -163,13 +169,17 @@ h2 {
 }
 h3 {
   margin: 1rem;
+  font-family: 'Inria Serif', serif;
 }
 h6{
   margin: 1rem 0;
   text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 130%;
 }
 .trait, .trait1, .traitBlanc, .trait-vert, .trait-violet{
   white-space: nowrap;
+  font-family: 'Indie Flower', cursive;
 }
 .trait::after, .trait::before,.trait1::after, .trait1::before, .traitBlanc::after, .traitBlanc::before, .trait-vert::before, .trait-vert::after, .trait-violet::before, .trait-violet::after{
   width: 24%;
@@ -203,6 +213,7 @@ h6{
 /* PRESENTATION */
 .body-presentation{
   background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+  font-family: 'Gotu', sans-serif;
 }
 .main-presentation{
   background-color: white;
@@ -333,6 +344,9 @@ figcaption{
   justify-content: center;
   align-items: center;
   color:black;
+  font-weight: bold;
+  font-size: 120%;
+  font-style: italic;
 }
 .presentation-catégories-liste li:hover figcaption{
   visibility: visible;
@@ -342,6 +356,7 @@ figcaption{
   text-align: center;
   margin: 1rem;
   white-space: nowrap;
+  font-family: 'Indie Flower', cursive;
 }
 .h2-presentation{
   margin: 1rem;
@@ -354,6 +369,7 @@ figcaption{
   text-align: center;
   max-width:1700px;
   margin: 0 auto;
+  font-family: 'Gotu', sans-serif;
 }
 #main-categories-arbustes{
   background-color: #e6ddd4;
@@ -414,6 +430,7 @@ figcaption{
 .h2-categories{
   padding: 0;
   margin: 2rem;
+  font-family: 'Indie Flower', cursive;
 }
 .categories-fondtranspent p{
   margin: 1rem;
