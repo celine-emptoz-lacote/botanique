@@ -3,36 +3,28 @@
   padding: 0;
 
 }
-
-
 header  {
   height: 15vh;
   padding: 1%;
   background-image: url(images/fond.jpg);
-
 }
-
-
-
 header h1 {
   text-align: center;
   font-family: 'Indie Flower', cursive;
   font-size:50px;
 }
-
 footer {
   background-image: url(images/fond.jpg);
 }
 
-
-
 /* MENU DEROULANT */
+
 nav {
   margin: 0 auto;
   position: sticky;
   top: 0;
+  max-width: 1300px;
 }
-
 .navHeader {
   list-style-type: none;
   display: flex;
@@ -371,6 +363,7 @@ figcaption{
 
 .body-categories{
   font-family: 'Gotu', sans-serif;
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
 }
 .main-categories{
   text-align: center;
@@ -670,6 +663,9 @@ figcaption{
 
 .accueil {
   text-align: center;
+  background-color: white;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .accueil h1 {
