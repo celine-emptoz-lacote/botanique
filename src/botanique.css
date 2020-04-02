@@ -4,14 +4,14 @@
 
 }
 
-/*Modifs*/
+
 header  {
   height: 15vh;
   padding: 1%;
   background-image: url(images/fond.jpg);
 
 }
-/**************************************************/
+
 
 
 header h1 {
@@ -50,6 +50,7 @@ nav .navHeader a  {
   display: block;
   text-decoration: none;
   color: black;
+  font-family: 'Gotu', sans-serif;
 }
 header nav a:hover, .footer-éléments a:hover{
   color: orange;
